@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaHomes | Modern Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <span class="brand-nova">NOVA</span><span class="brand-homes">HOMES</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Buy</a></li>
+                    <li><a href="#" class="nav-link">Rent</a></li>
+                    <li><a href="#" class="nav-link">Agents</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+                <a href="#" class="btn btn-login">Sign In</a>
+                <a href="#" class="btn btn-primary">List Property</a>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your <span>Dream Home</span></h1>
+                <p class="hero-subtitle">Luxury properties in premium locations</p>
+                
+                <div class="property-search">
+                    <div class="search-tabs">
+                        <button class="tab-btn active">Buy</button>
+                        <button class="tab-btn">Rent</button>
+                    </div>
+                    
+                    <form class="search-form">
+                        <div class="search-field">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="Location...">
+                        </div>
+                        <div class="search-field">
+                            <i class="fas fa-home"></i>
+                            <select>
+                                <option value="">Property Type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="house">House</option>
+                                <option value="villa">Villa</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span>Properties</span></h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <article class="property-card">
+                    <div class="property-badge">New</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Apartment">
+                    </div>
+                    <div class="property-details">
+                        <h3>Green Valley Residence</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Downtown District</p>
+                        
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2200 sqft</span>
+                        </div>
+                        
+                        <div class="property-footer">
+                            <p class="property-price">$1,250,000</p>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Property Card 2 -->
+                <article class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Modern House">
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Urban House</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> City Center</p>
+                        
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                        </div>
+                        
+                        <div class="property-footer">
+                            <p class="property-price">$950,000</p>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Property Card 3 -->
+                <article class="property-card">
+                    <div class="property-badge">Featured</div>
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Villa">
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Waterfront Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Beach District</p>
+                        
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3500 sqft</span>
+                        </div>
+                        
+                        <div class="property-footer">
+                            <p class="property-price">$2,500,000</p>
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Dream Home?</h2>
+                <p>Our expert agents are here to help you every step of the way.</p>
+                <a href="#" class="btn btn-primary">Contact an Agent</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <span class="brand-nova">NOVA</span><span class="brand-homes">HOMES</span>
+                <p>Premium real estate services since 2010</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Buying</a></li>
+                        <li><a href="#">Selling</a></li>
+                        <li><a href="#">Renting</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 NovaHomes. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
